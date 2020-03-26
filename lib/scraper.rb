@@ -22,7 +22,7 @@ class Scraper
     attributes = {}
     
     icon_container = doc.css("div.social-icon-container a").collect{|icon| icon.attributes("href").value}
-    doc.each do |link|
+    icon_container.each do |link|
       if link.include?("twitter")
         attributes[:twitter] = link
       elsif link.include?("linkedin")
