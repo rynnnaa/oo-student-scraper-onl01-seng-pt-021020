@@ -34,7 +34,7 @@ class Scraper
       end
     end
     attributes[:profile_quote] = doc.css("div.profile-quote").text
-    attributes[:bio] = doc.css("div.description-holder p").text.strip
+    attributes[:bio] = doc.css("div.description-holder p").text
     attributes
   end
 end
