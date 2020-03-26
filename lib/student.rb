@@ -19,5 +19,8 @@ class Student
   def self.all
     
   end
+  
+  def new (hash)
+  end
 end
 
